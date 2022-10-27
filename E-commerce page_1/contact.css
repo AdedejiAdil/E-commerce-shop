@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: black;
+    font-family: 'Kumbh San', sans-serif;
+}
+li{
+    list-style-type: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+h1{
+    font-size: 40px;
+}
+header{
+    padding: 15px 60px;
+    background-color: #E3E6F3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 1px 10px 1px black;
+    z-index: 99;
+}
+.hamburger-menu{
+    display: none;;
+}
+.menu-display{
+    position: absolute;
+    top: -200%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li {
+    font-size: 20px;
+    margin-left: 40px;
+}
+nav ul li:last-child a{
+    color:#088178 ;
+}
+nav ul li a::after{
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    top: 22px;
+    left: 0;
+    background: transparent;
+    transition: all .3s;
+    position: relative;
+    z-index: 999;
+}
+nav ul li a:hover::after, li a::after{
+    width: 100%;
+    background-color:#088178 ;
+}
+header .bag{
+    width: 25px;
+    height: 25px;
+}
+header .bag img{
+    width: 100%;
+}
+.hidden{
+    display: none;
+}
+.visible{
+    display:block;
+}
+.contact-banner{
+    background-image: url(about/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+section.sign-up{
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+    margin: 40px 0 0;
+    background-color: rgb(7, 7, 69);
+}
+section.sign-up .text h3{
+    font-size:2rem
+}
+section.sign-up .text p{
+    font-size:1.3rem
+}
+section.sign-up .text span{
+    color: orange;
+}
+section.sign-up form input.text{
+    border: none;
+    outline: none;
+    width: 22rem;
+    height: 3rem;
+    padding:0 20px;
+}
+section.sign-up form button{
+    position: relative;
+    border: none;
+    outline: none;
+    right: 3px;
+    color: white;
+    background-color: rgb(11, 135, 79);
+    width: 6rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+footer{
+    font-size:14px ;
+    background-color: #E3E6F3;
+    padding:20px 60px;
+}
+footer .link{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    padding:20px 0;
+}
+footer .link ul li{
+    line-height: 23px;
+}
+footer .link h3{
+    padding:10px 0;
+}
+footer .link .col1 .follow ul{
+    display: flex;
+}
+footer .link .col1 .follow ul li{
+    margin-right: 10px;
+}
+footer .link .col4 .store{
+    display: flex;
+    margin: 5px 0;
+}
+footer .link .col4 .store img{
+    border:1px solid rgba(0, 0, 0, 0.518);
+    margin-right: 10px;
+    border-radius: 5px;
+}
+footer .detail{
+    display: flex;
+    justify-content: center;
+}
